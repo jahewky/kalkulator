@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="50px">
+       <TextView
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Kalkulator Luas dan Keliling "
+           android:textSize="70px"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="40px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Panjang / Alas / Diameter / Sisi">
+        </TextView>
+        <EditText
+            android:id="@+id/edtpjg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="40px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Lebar / Tinggi">
+        </TextView>
+        <EditText
+            android:id="@+id/edtlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+       <Button
+           android:id="@+id/btnpersegi"
+           android:layout_marginRight="50px"
+           android:text="Persegi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnsegitiga"
+            android:text="Segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnlingkatan"
+            android:layout_marginLeft="50px"
+            android:text="Lingkaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="vertical"
+        android:layout_marginTop="300px"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="40px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HASIL LUAS">
+        </TextView>
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:id="@+id/tvhasilluas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HASIL KELILING">
+        </TextView>
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:id="@+id/tvhasilkeliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        </LinearLayout>
+</LinearLayout>
